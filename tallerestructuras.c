@@ -8,24 +8,26 @@ int main()
         char direccion[20];
         char carrera[20];
         int edad;
-        float promedio;
-    } a1, a2, a3, a4, a5;
+    };
     struct alumno alumnos[5];
+
+
 for (int i = 0; i < 5; i++)
 {
     printf("Ingrese los datos del alumno %d :", i+1);
-    gets(a1.nombre);
+    gets(alumnos[i].nombre);
     fflush(stdin );
-    gets(a1.direccion);
+    gets(alumnos[i].direccion);
     fflush( stdin );
-    gets(a1.carrera);
+    gets(alumnos[i].carrera);
     fflush( stdin );
-    scanf("Ingrese el nombre:%d"a1.edad);
-    scanf("Ingrese el nombre:%.2f"a1.promedio);
+    gets(alumnos[i].edad);
+    fflush( stdin );
+
 }
 for (int i = 0; i < 5; i++)
 {
-    printf("Los datos de alumno %d son: %s,%s,%s,%d,%.2f", i+1,a1.nombre, a1.direccion, a1.carrera, a1.edad, a1.promedio);
+    printf("Los datos de alumno %d son: %s,%s,%s,%d,%.2f", i+1,alumnos[i].nombre,alumnos[i].direccion, alumnos[i].carrera, alumnos[i].edad);
 }
 
     return 0;
